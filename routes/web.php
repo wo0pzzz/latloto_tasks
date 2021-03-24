@@ -13,6 +13,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index')->name('home');
+Route::get('/shop', 'ShopController@index')->name('shop');
+Route::get('/script', 'ScriptController@index')->name('dbscript');
+
+
+Route::post('/api/add_to_cart/{id}', 'ShopController@addToCart');

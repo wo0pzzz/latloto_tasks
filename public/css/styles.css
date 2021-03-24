@@ -1,0 +1,12 @@
+body {
+
+}
+
+.header {
+    background-color: #952a24;
+    height: 70px;
+}
+
+.tasks a {
+    text-decoration: none;
+}
