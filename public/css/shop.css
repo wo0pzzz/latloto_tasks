@@ -13,6 +13,30 @@
     font-weight: bold;
 }
 
-.product-info .price {
+.p-checkout-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 25px;
+    width: 100%;
+    margin-bottom: 10px;
+}
 
+.total-container {
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 30px;
+}
+
+.remove-btn {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.payment-form, .no-product-left {
+    display: none;
+}
+
+.payment-form label {
+    font-weight: bold;
 }

@@ -15,7 +15,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index')->name('home');
 Route::get('/shop', 'ShopController@index')->name('shop');
+Route::get('/checkout', 'ShopController@checkout')->name('checkout');
 Route::get('/script', 'ScriptController@index')->name('dbscript');
-
+Route::post('/go-checkout', 'ShopController@goCheckout')->name('gocheckout');
 
 Route::post('/api/add_to_cart/{id}', 'ShopController@addToCart');
+Route::post('/api/remove_from_cart/{id}', 'ShopController@removeFromCart');

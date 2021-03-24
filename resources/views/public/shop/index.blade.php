@@ -16,7 +16,7 @@
                                <div class="title">{{ $product['title'] }}</div>
                                <hr/>
                                <div class="price"><b>Price:</b> {{ number_format($product['price'], 2) }} €</div>
-                               <div class="count"><b>Count:</b> <span class="price">{{ $product['count'] }}</span></div>
+                               <div class="count"><b>Count:</b> <span class="item-count">{{ $product['count'] }}</span></div>
                                <hr/>
                                <div class="action text-center">
                                    <button class="add-to-cart btn btn-success btn-sm" data-product-id="{{ $product['id'] }}">Add to cart</button>
